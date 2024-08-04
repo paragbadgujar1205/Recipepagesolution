@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Outfit:wght@100..900&family=Roboto&family=Young+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(329, 88%, 94%);
+}
+#container{
+    max-width:700px ;
+    margin-top: 40px;
+    padding: 27px 25px;
+    color: hsl(30, 10%, 34%);
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+}
+.main{
+    margin: 20px 0;
+}
+.banner{
+    width: 100%;
+    border-radius: 10px;
+}
+h1{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 15px 0;
+    color: hsl(24, 5%, 18%);
+}
+h2{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: hsl(14, 45%, 36%);
+}
+#Preparation-time{
+    background-color: hsl(330, 100%, 98%);
+    padding: 20px 35px;
+    border-radius: 10px;
+}
+#Preparation-time div{
+    padding: 0 10px;
+}
+ li{
+    list-style-type: none;
+    margin: 10px 0;
+    position: relative;
+    padding-left: 40px;
+}
+li:before{
+    content: '●';
+    position: absolute;
+    font-size: 11px;
+    left: 0;
+    top: 3px;
+    margin-right: 10px;
+    color:hsl(24, 5%, 18%)
+}
+
+h3{
+    color: hsl(332, 51%, 32%);
+    margin-bottom: 15px;
+}
+.box{
+    padding: 20px 15px;
+}
+.box li{
+    margin: 10px 0;
+    position: relative;
+    list-style-type: none;
+    padding-left: 40px;
+    counter-increment: list;
+}
+.number-list li:before{
+    content: counter(list)'. ';
+    font-size: 15px;
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+.nutrition-table{
+    width: 100%;
+}
+.number-list{
+    list-style-type: number;
+}
+.nutrition-table{
+    margin-top: 20px;
+}
+.para{
+    margin: 20px 0;
+}
+.para1{
+    margin-bottom: 35px;
+}
+.nutrition-table, tr, td{
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    border-collapse: collapse;
+    padding: 10px 0;
+}
+.brown{
+    color: hsl(332, 51%, 32%);
+    font-weight: 600;
+}
